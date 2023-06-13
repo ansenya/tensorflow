@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'ru.senya'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.tensorflow/tensorflow-core-platform-gpu
+    implementation 'org.tensorflow:tensorflow-core-platform-gpu:0.3.3'
+
+
+}
+
+test {
+    useJUnitPlatform()
+}
